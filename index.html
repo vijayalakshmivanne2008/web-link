@@ -1,0 +1,312 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Logic Learning Page</title>
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fb;
+            color: #263238;
+            line-height: 1.7;
+        }
+
+        /* Header */
+        header {
+            background-color: #173b68;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 17px;
+            margin-bottom: 0;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #102b4e;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 25px;
+            padding: 25px 30px;
+            border-radius: 10px;
+            border: 1px solid #e0e6ed;
+            border-left: 5px solid #2878c8;
+        }
+
+        section h2 {
+            color: #173b68;
+            margin-top: 0;
+            font-size: 25px;
+        }
+
+        section h3 {
+            color: #2878c8;
+            margin-top: 20px;
+        }
+
+        section p {
+            font-size: 16px;
+        }
+
+        strong {
+            color: #173b68;
+        }
+
+        ol, ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Welcome Section */
+        #home {
+            border-left-color: #16a085;
+        }
+
+        #home h2 {
+            color: #13866e;
+        }
+
+        /* Individual Logic Sections */
+        #prime {
+            border-left-color: #2878c8;
+        }
+
+        #armstrong {
+            border-left-color: #8e44ad;
+        }
+
+        #armstrong h2,
+        #armstrong h3 {
+            color: #8e44ad;
+        }
+
+        #perfect {
+            border-left-color: #e67e22;
+        }
+
+        #perfect h2,
+        #perfect h3 {
+            color: #c76b12;
+        }
+
+        #reverse {
+            border-left-color: #16a085;
+        }
+
+        #reverse h2,
+        #reverse h3 {
+            color: #13866e;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            border-left-color: #d4a017;
+        }
+
+        .benefits h2 {
+            color: #9b7410;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #102b4e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 27px;
+            }
+
+            nav a {
+                margin: 5px 8px;
+            }
+
+            main {
+                padding: 0 12px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Programming Logic Learning</h1>
+        <p>Learn Basic Programming Logic and Number Programs</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#prime">Prime Number</a>
+        <a href="#armstrong">Armstrong Number</a>
+        <a href="#perfect">Perfect Number</a>
+        <a href="#reverse">Reverse Number</a>
+    </nav>
+
+    <main>
+
+        <section id="home">
+            <h2>Welcome to Programming Logic</h2>
+            <p>
+                This page introduces basic programming logic concepts
+                with definitions, examples, and step-by-step algorithms.
+                Learn how to solve number-based problems using logical thinking.
+            </p>
+        </section>
+
+        <section id="prime">
+            <h2>1. Prime Number</h2>
+
+            <p>
+                A prime number is a number greater than 1 that has
+                exactly two factors: 1 and itself.
+            </p>
+
+            <p><strong>Examples:</strong> 2, 3, 5, 7, 11, 13</p>
+
+            <h3>Logic</h3>
+            <ol>
+                <li>Take an integer as input.</li>
+                <li>Check whether the number is less than or equal to 1.</li>
+                <li>Check whether any number from 2 to the square root of the number divides it exactly.</li>
+                <li>If a divisor exists, it is not prime; otherwise, it is prime.</li>
+            </ol>
+        </section>
+
+        <section id="armstrong">
+            <h2>2. Armstrong Number</h2>
+
+            <p>
+                An Armstrong number is a number equal to the sum of
+                its digits, each raised to the power of the total
+                number of digits.
+            </p>
+
+            <p><strong>Example:</strong> 153</p>
+            <p>153 = 1³ + 5³ + 3³ = 153</p>
+
+            <h3>Logic</h3>
+            <ol>
+                <li>Take a number as input.</li>
+                <li>Count the number of digits.</li>
+                <li>Extract each digit.</li>
+                <li>Raise each digit to the power of the digit count.</li>
+                <li>Add the results and compare the sum with the original number.</li>
+            </ol>
+        </section>
+
+        <section id="perfect">
+            <h2>3. Perfect Number</h2>
+
+            <p>
+                A perfect number is a positive integer equal to the
+                sum of its positive divisors, excluding itself.
+            </p>
+
+            <p><strong>Example:</strong> 6</p>
+            <p>6 = 1 + 2 + 3</p>
+
+            <h3>Logic</h3>
+            <ol>
+                <li>Take a positive integer as input.</li>
+                <li>Find all its positive divisors except the number itself.</li>
+                <li>Add all the divisors.</li>
+                <li>Compare the sum with the original number.</li>
+                <li>If both are equal, it is a perfect number.</li>
+            </ol>
+        </section>
+
+        <section id="reverse">
+            <h2>4. Reverse Number</h2>
+
+            <p>
+                Reversing a number means arranging its digits in
+                the opposite order.
+            </p>
+
+            <p><strong>Example:</strong> 1234 becomes 4321.</p>
+
+            <h3>Logic</h3>
+            <ol>
+                <li>Take a number as input.</li>
+                <li>Extract the last digit using the remainder operator.</li>
+                <li>Add the digit to the reversed number.</li>
+                <li>Remove the last digit using integer division.</li>
+                <li>Repeat until the number becomes zero.</li>
+            </ol>
+        </section>
+
+        <section class="benefits">
+            <h2>Benefits of Learning Programming Logic</h2>
+
+            <ul>
+                <li>Improves problem-solving skills.</li>
+                <li>Builds a strong programming foundation.</li>
+                <li>Helps understand algorithms.</li>
+                <li>Prepares learners for coding interviews.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Programming Logic Learning Page</p>
+        <p>Created using HTML5 and Internal CSS only.</p>
+    </footer>
+
+</body>
+</html>
+<! -->
